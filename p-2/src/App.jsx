@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import UserProfile from './Userprofile';
+import './style.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const user = {
+    name: 'Sujal Patel',
+    age: 19,
+    location: 'Surat',
+    bio: 'Passionate Web Developer'
+  };
 
   return (
-    <>
-     <h1>hello</h1>
-    </>
-  )
+    <div className="App">
+      <h1>User Profile</h1>
+      <UserProfile 
+        name={user.name} 
+        age={user.age} 
+        location={user.location} 
+        bio={user.bio} 
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;

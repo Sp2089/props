@@ -1,0 +1,18 @@
+.UserProfile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    text-align: left;
+  }
+  
+  .UserProfile h2 {
+    margin-top: 0;
+  }
+  
+  .UserProfile p {
+    margin: 5px 0;
+  }
+  
